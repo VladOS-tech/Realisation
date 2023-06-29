@@ -40,10 +40,12 @@ public:
     virtual vector<Attendance>* getAttendance() {};
     virtual vector<Mark>* getDebts() {};
     virtual vector<Attendance>* getSpaces() {};
+    virtual virtual string getSurname() {};
+    virtual void setSurname(string surname) {};
 
     //decan
     virtual vector<Mark>* getGroupMarks(string group) {};
     virtual vector<Mark>* getStreamMarks(string stream) {};
     virtual vector<Mark>* getSubjectMarks(string subject) {};
-    virtual void Expulsion() {};
+    virtual void Expulsion(Student student, string status) {};
 };

@@ -9,6 +9,7 @@ using namespace std;
 
 class Teacher : public User {
 public:
+	Teacher(Marklist* ml, Attendancelist* al) : User(ml, al) {}
 	int getUserType() { return 1; }
 	virtual void addMark(string subject, int value, Student student) 
 	{

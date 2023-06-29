@@ -13,15 +13,15 @@ private:
     Attendancelist* al;
     Marklist* ml;
 public:
-    Student(Marklist* pl, Attendancelist* al) : User(pl, al) { this->al = al; this->al = al; }
+    Student(Marklist* ml, Attendancelist* al) : User(ml, al) { this->ml = ml; this->al = al; }
     int getUserType() { return 3; }
     Student() { surname = "Ivanov"; group = "IS1"; stream = "IS"; status = "Learning"; }
-    string getSurname() { return surname; }
+    virtual string getSurname() { return surname; }
     string getGroup() { return group; }
     string getStream() { return stream; }
     string getStatus() { return status; }
     void setStatus(string status) { this->status = status; }
-    void setSurname(string surname) { this->surname = surname; }
+    virtual void setSurname(string surname) { this->surname = surname; }
     virtual vector<Attendance>* getAttendance()
     {
         vector<Attendance> AttendanceArray;
