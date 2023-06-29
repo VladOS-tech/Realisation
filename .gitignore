@@ -2,3 +2,9 @@
 *.vcxproj*
 *.exe
 *vs*
+*.log
+*.obj
+*.pdb
+*.idb
+Debug*
+*.tlog
